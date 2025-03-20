@@ -9,4 +9,4 @@ This repository contains all the materials and files related to the **Web Techno
 
 Feel free to explore the files and use them as a reference for your studies.
 
-For any help, you can email me at [my email address](muhammadnoman.cs@gmail.com)
+For any help, you can email me at <a href="mailto:muhammadnoman.cs@gmail.com">muhammadnoman.cs@gmail.com</a>
