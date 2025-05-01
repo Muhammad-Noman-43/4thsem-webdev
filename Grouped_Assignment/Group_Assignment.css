@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+}
+
+.navbar {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background: linear-gradient(to right, #03191e 0%, #20a4f3 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 40%;
+  min-width: 400px;
+}
+
+.nav-links > li {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links > li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links > li:active {
+  transform: translateY(0);
+}
+
+.nav-links li:last-child {
+  position: relative;
+}
+
+.nav-links li:last-child::after {
+  content: "Muhammad's Team";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff5722;
+  color: white;
+  font-size: 0.6rem;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.profile {
+  height: 150px;
+  width: 250px;
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  border-radius: 20px;
+  background-color: #f0f8ff;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+img {
+  height: 50px;
+  object-fit: cover;
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #03191e;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.top-profile {
+  border: 2px solid #20a4f3;
+  z-index: 1;
+}
+
+.profile:not(.top-profile) {
+  opacity: 0;
+}
+
+.top-profile:hover {
+  border: none;
+  background: #2ecc71;
+}
+
+.top-profile:hover ~ .profile:nth-child(2) {
+  top: 72%;
+  left: 42%;
+  opacity: 1;
+  background: #f39c12;
+}
+
+.top-profile:hover ~ .profile:nth-child(3) {
+  top: 110px;
+  left: 42%;
+  opacity: 1;
+  background: #9b59b6;
+}
+
+.top-profile:hover ~ .profile:nth-child(4) {
+  top: 45%;
+  left: 62%;
+  opacity: 1;
+  background: #b4bc1a;
+}
+
+.top-profile:hover ~ .profile:nth-child(5) {
+  top: 45%;
+  left: 22%;
+  opacity: 1;
+  background: #83e28f;
+}

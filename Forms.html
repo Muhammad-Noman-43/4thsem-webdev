@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="get" target="_blank">
+      <label for="fname">Enter your first name</label>
+      <input type="text" name="fname" id="fname" required />
+
+      <h3>Last name</h3>
+      <br />
+      <input type="text" name="lname" id="lname" required />
+
+      <h3>Email</h3>
+      <input type="email" name="email" id="email" />
+
+      <h3>Password</h3>
+      <input type="password" name="pass" id="password" /><br /><br />
+
+      <label for="country">Country</label>
+      <select size="1" name="country" id="country">
+        <option value="pak">Pakistan</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option></select
+      ><br /><br />
+
+      <h3>Select your gender</h3>
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+
+      <h3>Interests</h3>
+      <input type="checkbox" name="interests" id="interest1" />
+      <label for="interest1">Sports</label>
+      <input type="checkbox" name="interests" id="interest2" />
+      <label for="interest2">Music</label>
+      <input type="checkbox" name="interests" id="interest3" />
+      <label for="interest3">Technology</label>
+
+      <br /><br />
+      <label for="bio">Bio</label>
+      <br />
+      <textarea
+        name="bio"
+        id="bio"
+        placeholder="Tell us about yourself..."
+      ></textarea>
+
+      <br /><br />
+      <button type="submit">Submit form</button>
+      <button type="reset">Reset Form</button>
+    </form>
+  </body>
+</html>
