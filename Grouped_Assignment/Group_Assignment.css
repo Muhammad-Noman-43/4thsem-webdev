@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  cursor: default;
 }
 
 body {
@@ -151,4 +152,18 @@ img {
   left: 22%;
   opacity: 1;
   background: #83e28f;
+}
+
+.desc {
+  position: absolute;
+  bottom: 10px;
+  margin-left: 20px;
+  font-weight: bold;
+  width: 97vw;
+  height: 30px;
+}
+
+.desc > a {
+  text-decoration: none;
+  cursor: pointer;
 }
